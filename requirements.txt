@@ -1,0 +1,8 @@
+pandas
+openpyxl
+numpy
+scikit-learn
+scipy
+gensim
+lightgbm
+eli5
