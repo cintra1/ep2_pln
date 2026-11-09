@@ -128,7 +128,7 @@ def main(names):
     sub = test.copy()
     sub["clarity"] = labels
     out = os.path.join(EP2, "ep2_test1_rotulado.xlsx")
-    sub.to_excel(out, index=False)
+    sub.to_excel(out, index=False, sheet_name="test1")
 
     check = pd.read_excel(out)
     assert check.shape == test.shape == (900, 2)
@@ -157,7 +157,7 @@ def main(names):
         out2_dir = os.path.join(ROOT, "entrega", "teste2_resultado")
         os.makedirs(out2_dir, exist_ok=True)
         out2 = os.path.join(out2_dir, "ep2_test2_rotulado.xlsx")
-        sub2.to_excel(out2, index=False)
+        sub2.to_excel(out2, index=False, sheet_name="test2")
 
         check2 = pd.read_excel(out2)
         assert check2.shape == test2.shape == (897, 2)

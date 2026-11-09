@@ -27,7 +27,9 @@ contra 0,4708 do EP1 (McNemar no teste1, p = 0,047).
     stacking.
   - `stack_final.py`: treina o meta-modelo, escolhe os hiperparâmetros por validação aninhada, gera a
     planilha de teste1 (comparação) e a planilha oficial de teste2, e roda o teste de McNemar contra o EP1.
-  - `interpretabilidade.py`: análise eli5 (global e local) e a amostra de erros usada no relatório.
+  - `interpretabilidade.py`: análise eli5 (global e local) e a amostra de erros usada no relatório; gera
+    `eli5_pesos_globais.html` e `eli5_exemplos_locais.html` (já incluídos aqui), com o detalhamento
+    palavra a palavra citado na seção 9(ii) do relatório.
   - `ablation.py`, `greedy_backward.py`: estudo de robustez do ensemble (reproduz a comparação entre o
     stacking de 13 modelos e o subconjunto de 9 encontrado por eliminação reversa, discutida no relatório).
   - `preds/`: cache das previsões de cada modelo (OOF + teste1 + teste2), já calculado.
